@@ -31,7 +31,7 @@ export class SaveFile implements SaveFileUseCase {
             return true;
 
         } catch (error) {
-            console.error(error);
+            console.error(error); //Ponerlo en Winston para que no cree ruido en nuestro testing
             return false;
         }
 
